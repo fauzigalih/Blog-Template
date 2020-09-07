@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-bottom: 1000px;
+    background-color: #F8F9FA;
+}
+
+nav {
+    padding: 10px 115px !important;
+}
+
+nav.navbar {
+    box-shadow: 0px 8px 5px -10px rgba(0,0,0,.5);
+}
+
+nav a img {
+    height: 2rem;
+}
+
+nav ul li.nav-item a.nav-link {
+    color: black !important;
+    font-weight: 250;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-left: 1rem !important;
+}
+
+nav ul.navbar-nav {
+    margin-right: 7%;
+}
+
+nav .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, .5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav button.btn-outline {
+    border-color: #CED4DB;
+}
+
+main .container {
+    margin-top: 3.5rem;
+    background-color: white;
+    box-sizing: border-box;
+    border: .1rem solid rgb(230, 230, 230);
+    border-radius: .3rem;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 10px 60px !important;
+    }
+
+    ul li.nav-item a.nav-link {
+        padding-left: .3rem !important;
+    }
+
+    nav ul.navbar-nav {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 40px !important;
+    }
+
+    ul li.nav-item a.nav-link {
+        margin-left: -15px !important;
+    }
+
+    nav ul.navbar-nav {
+        margin-right: 0;
+    }
+
+    nav form.search {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: .5rem;
+    }
+
+    nav form.search input {
+        width: 10rem!important;
+        margin-right: .2rem!important;
+    }
+
+    nav .nav-item {
+        padding: 0 .5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        padding: 5px 10px !important;
+    }
+
+    nav form.search {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: .5rem;
+    }
+
+    nav form.search input {
+        width: 70%!important;
+        margin-right: .5rem!important;
+    }
+}
