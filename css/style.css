@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Source+Serif+Pro&display=swap');
 
 * {
     padding: 0;
@@ -10,16 +10,21 @@ body {
     background-color: #F8F9FA;
 }
 
-nav {
-    padding: 10px 115px !important;
+.play-font {
+    font-family: 'Play', sans-serif;
 }
 
-nav.navbar {
+.serif-font {
+    font-family: 'Source Serif Pro', serif;
+}
+
+nav {
+    padding: 5px 124px !important;
     box-shadow: 0px 8px 5px -10px rgba(0,0,0,.5);
 }
 
-nav a img {
-    height: 2rem;
+nav a span {
+    font-size: 1.85rem;
 }
 
 nav ul li.nav-item a.nav-link {
@@ -28,6 +33,11 @@ nav ul li.nav-item a.nav-link {
     text-transform: capitalize;
     letter-spacing: 1px;
     padding-left: 1rem !important;
+}
+
+nav ul li.nav-item a.nav-link.active,
+nav ul li.nav-item a.nav-link:hover {
+    color: #45A845 !important;
 }
 
 nav ul.navbar-nav {
@@ -42,17 +52,66 @@ nav button.btn-outline {
     border-color: #CED4DB;
 }
 
-main .container {
-    margin-top: 3.5rem;
-    background-color: white;
+main {
+    margin: 100px 124px 40px 124px;
+}
+
+main .content {
     box-sizing: border-box;
-    border: .1rem solid rgb(230, 230, 230);
+    border: .05rem solid #CED4DB;
     border-radius: .3rem;
+    padding: 2rem;
+    background-color: white;
+    width: 70%;
+}
+
+main .content .content-uploader {
+    display: grid;
+    width: 20%;
+    grid-template-areas: 
+    'img name'
+    'img date';
+    font-size: .9rem;
+}
+
+main .content .content-uploader img {
+    grid-area: img;
+    box-sizing: border-box;
+    border: 1px solid #CED4DB;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+}
+
+main .content .content-uploader a {
+    grid-area: name;
+    color: black;
+}
+
+main .content .content-uploader p.content-update {
+    grid-area: date;
+    color: rgb(110, 107, 107);
+}
+
+main .content .content-header-uploader {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content .content-uploader-media {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+main .content .content-uploader-media a i {
+    color: #757575;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1024px) {
     nav {
-        padding: 10px 60px !important;
+        padding: 5px 64px !important;
     }
 
     ul li.nav-item a.nav-link {
@@ -66,11 +125,12 @@ main .container {
 
 @media (max-width: 768px) {
     nav {
-        padding: 5px 40px !important;
+        padding: 5px 48px !important;
     }
 
     ul li.nav-item a.nav-link {
         margin-left: -15px !important;
+        margin-right: -15px !important;
     }
 
     nav ul.navbar-nav {
@@ -80,28 +140,23 @@ main .container {
     nav form.search {
         display: flex;
         flex-wrap: nowrap;
-        padding-left: .5rem;
+        margin-top: -.4rem !important;
     }
 
     nav form.search input {
         width: 10rem!important;
         margin-right: .2rem!important;
     }
-
-    nav .nav-item {
-        padding: 0 .5rem;
-    }
 }
 
 @media (max-width: 425px) {
     nav {
-        padding: 5px 10px !important;
+        padding: 1px 10px 1px 24px !important;
     }
 
     nav form.search {
         display: flex;
         flex-wrap: nowrap;
-        padding-left: .5rem;
     }
 
     nav form.search input {
