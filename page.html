@@ -45,7 +45,7 @@
                 <div class="content-header-uploader">
                     <div class="content-uploader">
                         <img src="img/garuda.jpg" alt="">
-                        <a href="">Fauzi Galih</a>
+                        <a href="">Fauzi Galih Aji Saputro</a>
                         <p class="content-update">Nov 11, 2020</p>
                     </div>
                     <div class="content-uploader-media">
@@ -56,17 +56,53 @@
                         <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="content-header-title">Cara Membuat Web Responsive</div>
+                <div class="content-header-title">Authentication dan authorization</div>
             </div>
             <div class="content-body">
                 <div class="content-body-generate">
-
+                    <p>
+                        Authentication dan authorization adalah kunci untuk mendapatkan akses kepada resources corporate — banyak jenis authentication method yang bisa diadopsi dengan keuntungan dan kerugiannya
+                    </p>
+                    <p>
+                        Dalam suatu infrastuktur jaringan business atau corporasi yang berskala menengah dan besar, perhatian terhadap perlindungan asset corporate yang berupa informasi begitu besarnya. Keamanan terhadap segala macam ancaman jaringan maupun ancaman dari internet adalah yang paling utama. Adanya manajemen keamanan terhadap informasi adalah seuatu keharusan, yang merupakan framework, procedure, kebijakan dan lain-lain yang tujuannya adalah keamanan total terhadap asset informasi. Salah satu pintu masuk kompromi keamanan adalah mendapatkan akses melalui authentication dan authorization.
+                    </p>
+                    <h1>Apa itu authentikasi?</h1>
+                    <p class="first">
+                        Authentication adalah proses dimana seorang user (melalui berbagai macam akses fisik berupa komputer , melalui jaringan , atau melalui remote access ) mendapatkan hak akses kepada suatu entity (dalam hal ini jaringan suatu corporate). Seorang user melakukan login kedalam suatu infrastruktur jaringan dan sistem mengenali user ID ini dan menerimanya untuk kemudian diberikan akses terhadap resources jaringan sesuai dengan authorisasi yang dia terima.
+                    </p>
+                    <figure>
+                        <img src="img/contoh.gif" alt="">
+                        <a href="">Form-Based Authentication</a>
+                    </figure>
+                    <p>Metode authentication yang berbasis pada kerahasiaan informasi adalah:</p>
+                    <ul>
+                        <li>Password/PIN: Hanya pemiliknya yang tahu password/pin.</li>
+                        <li>Digital Certificate: Berbasis pada asymmetric cryptography yang mengandung informasi rahasia yaitu private key.</li>
+                    </ul>
+                    <p>Pada session based authentication, server aka membuat session untuk user setelah user log in. Session id akan disimpan di dalam cookie pada browser yang digunakan user. Selama user tetap dalam keadaan log in, Cooki dapat dikirim pada setiap request yang dilakukan oleh user. Server lalu melakukan perbandingan dengan session id yang disimpan pada cookie dengan informasi session yang disimpan pada memory untuk mengverifikasi identitas user dan mengembalikan respon sesuai dengan status yang diberikan.</p>
+                    <h2>Token Based Authentication</h2>
+                    <p class="first">Terdapat banyak aplikasi web menggunakan JSON Web Token (JWT) dibandingkan sessions untuk authentication. Pada aplikasi token based, server akan membuat JWT dengan rahasia dan mengirim JTW kepada client. Client kemudian menyimpan JTW (biasanya pada local storage) dan memasukan JWT kedalam headers untuk setiap request yang dilakukan oleh client. Server kemudian akan memvalidasi JWT pada setiap request yang dilakukan clinet dan mengembalikan respons yang sesuai.</p>
+                    <p>Perbedaan yang sangat besar disini adalah user’s state tidak disimpan di dalam server, akan tetapi disimpan didalam token pada sisi client. Sebagian besar aplikasi web modern menggunakan JWT untuk authentication dengan alasan scalabilty dan mobile device authentication.</p>
+                </div>
+                <div class="content-tag">
+                    <ul>
+                        <li><a href="">Authentication</a></li>
+                        <li><a href="">Responsive</a></li>
+                        <li><a href="">Rest Api</a></li>
+                    </ul>
                 </div>
                 <div class="content-uploader-detail">
-                    <img src="" alt="">
+                    <img src="img/garuda.jpg" alt="">
                     <p class="written-by">Written By</p>
-                    <a href="">Fauzi Galih</a>
-                    <p class="quotes-uploader">WKWK Landd...</p>
+                    <a href="">Fauzi Galih Aji Saputro</a>
+                    <p class="quotes-uploader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam praesentium at libero modi, possimus corrupti quo dignissimos, eligendi minus suscipit nisi perferendis. Possimus natus quia nam sunt, rerum deleniti.</p>
+                    <div class="content-uploader-media">
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="content-footer">
@@ -78,19 +114,58 @@
                 </div>
             </div>
         </div>
+        <div class="content-side">
+            <div class="side-advertisement">
+                advertisement 336 x 280
+            </div>
+            <div class="side-box"></div>
+            <div class="accordion side-new" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-block text-left side-new-title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        New Tutorial
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        New Project
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        New Template
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </main>
-    <sidebar>
-        <div class="sidebar-newsletter"></div>
-        <div class="sidebar-advertisement-1">
-            
-        </div>
-        <div class="sidebar-other-article">
-
-        </div>
-        <div class="sidebar-advertisement-1">
-            
-        </div>
-    </sidebar>
 
     <footer></footer>
 </body>
