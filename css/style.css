@@ -53,21 +53,25 @@ nav button.btn-outline {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
     margin: 100px 124px 40px 124px;
 }
 
 main .content {
+    width: 65%;
     box-sizing: border-box;
     border: .05rem solid #CED4DB;
     border-radius: .3rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: white;
-    width: 70%;
+    color: rgba(41, 41, 41, 1);
 }
 
 main .content .content-uploader {
     display: grid;
-    width: 20%;
+    width: 30%;
+    grid-template-columns: 1fr 3.5fr;
     grid-template-areas: 
     'img name'
     'img date';
@@ -106,6 +110,184 @@ main .content .content-uploader-media {
 
 main .content .content-uploader-media a i {
     color: #757575;
+    font-size: 1.2rem;
+}
+
+main .content .content-header .content-header-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #CED4DB;
+    word-break: break-word;
+}
+
+main .content .content-body .content-body-generate p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    word-break: break-word;
+    margin-top: 2em;
+    margin-bottom: -0.46em;
+}
+
+main .content .content-body .content-body-generate p.first {
+    margin-top: 0.86em;
+}
+
+main .content .content-body .content-body-generate h1 {
+    font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: -0.28em;
+    margin-top: 2.5em;
+}
+
+main .content .content-body .content-body-generate h2 {
+    font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: -0.28em;
+    margin-top: 2.5em;
+}
+
+main .content .content-body .content-body-generate figure {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: 56px auto 0 auto;
+}
+
+main .content .content-body .content-body-generate figure a {
+    text-align: center;
+    color: #67696b;
+    text-decoration: underline;
+    font-size: .85rem;
+    margin-top: 1em;
+}
+
+main .content .content-body .content-body-generate img.title {
+    width: 100%;
+    height: auto;
+}
+
+main .content .content-body .content-body-generate ul li {
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    margin: 1em 0 -0.46em 30px;
+    font-size: 20px;
+}
+
+main .content .content-body .content-tag ul {
+    display: flex;
+    margin: 3rem 0;
+}
+
+main .content .content-body .content-tag ul li {
+    list-style: none;
+}
+
+main .content .content-body .content-tag ul li a {
+    color: #757575;
+    background-color: #F2F2F2;
+    padding: 4px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: .8rem;
+    margin-right: .4rem;
+    text-decoration: none;
+}
+
+main .content .content-uploader-detail {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    'img by media'
+    'img name media'
+    'img quotes media';
+    border-top: 1px solid #CED4DB ;
+    border-bottom: 1px solid #CED4DB ;
+    padding: 1em 0;
+}
+
+main .content .content-uploader-detail img {
+    grid-area: img;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #CED4DB;
+}
+
+main .content .content-uploader-detail p.written-by {
+    grid-area: by;
+    margin-bottom: -.5em;
+    font-size: .9rem;
+    color: #757575;
+}
+
+main .content .content-uploader-detail a {
+    grid-area: name;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(41, 41, 41, 1);
+}
+
+main .content .content-uploader-detail p.quotes-uploader {
+    grid-area: quotes;
+    color: #757575;
+    padding-right: 1em;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+main .content .content-uploader-detail .content-uploader-media {
+    grid-area: media;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+main .side-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: .05rem solid #CED4DB;
+    border-radius: .3rem;
+    padding: 1rem;
+    background-color: white;
+    color: rgba(41, 41, 41, 1);
+}
+
+main .content-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+main .content-side .side-advertisement {
+    width: 336px;
+    height: 280px;
+    background-color: red;
+    color: #CED4DB;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main .content-side .side-new {
+    margin-top: 2rem;
+    font-family: 'Source Serif Pro', serif;
+    color: rgba(41, 41, 41, 1);
+    width: 100%;
+}
+
+main .content-side .card {
+    border: .05rem solid #CED4DB;
+    border-radius: .3rem;
+}
+
+main .content-side .side-new-title {
     font-size: 1.2rem;
 }
 
