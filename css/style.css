@@ -13,6 +13,10 @@ body.main {
     background-color: white;
 }
 
+body.main header {
+    grid-area: header-body;
+}
+
 .play-font {
     font-family: 'Play', sans-serif;
 }
@@ -79,6 +83,114 @@ main.main .main-header .main-jumbotron {
     position: relative;
     height: 400px;
     margin-top: 65px;
+    margin-bottom: 2rem;
+}
+
+main.main .container-main {
+    box-sizing: border-box;
+    margin: 0 124px;
+    padding: 0;
+}
+
+main.main .list-item {
+    display: grid;
+    grid-template-areas: 
+    'title more'
+    'desc more'
+    'list-card list-card';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+main.main .list-item p.title {
+    grid-area: title;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+main.main .list-item p.desc {
+    grid-area: desc;
+    color: #757575;
+}
+
+main.main .list-item a.more {
+    grid-area: more;
+    place-self: center end;
+    color: rgba(41, 41, 41, 1);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main.main .list-item a.more:hover {
+    color: #45A845;
+}
+
+main.main .list-item .list-card {
+    grid-area: list-card;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.main .list-item .list-card a {
+    box-sizing: border-box;
+    border: 1px solid #CED4DB;
+    width: 280px;
+    height: 360px;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+main.main .list-item .list-card img {
+    width: 100%;
+    height: 180px;
+}
+
+main.main .list-item .list-card a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main.main .list-item .list-card a:hover {
+    transform: scale(1.015);
+}
+
+main.main .list-item .list-card a .content-card {
+    padding: 1rem;
+    color: rgba(41, 41, 41, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+main.main .list-item .list-card a .uploader {
+    display: grid;
+    grid-template-areas: 
+    'img name'
+    'img date';
+    grid-template-columns: 42px auto;
+}
+
+main.main .list-item .list-card a .uploader img {
+    grid-area: img;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+main.main .list-item .list-card a .uploader p.name {
+    grid-area: name;
+    font-size: .8rem;
+    margin-bottom: -.2em;
+}
+
+main.main .list-item .list-card a .uploader p.date {
+    grid-area: date;
+    font-size: .7rem;
+    color: #757575;
+    margin-bottom: -.2em;
 }
 
 main .content-main {
