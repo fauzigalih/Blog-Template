@@ -69,6 +69,7 @@ main {
     margin: 100px 124px 40px 124px;
 }
 
+/* START Dashboard Main Layout */
 main.main {
     margin: 0;
     display: unset;
@@ -192,6 +193,93 @@ main.main .list-item .list-card a .uploader p.date {
     color: #757575;
     margin-bottom: -.2em;
 }
+/* END Dashboard Main Layout */
+
+/* START Search Layout */
+main.search .content-header p.search {
+    display: grid;
+    grid-template-areas: 'for search';
+    grid-area: search;
+    justify-content: start;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main.search .content-header p.search span {
+    grid-area: for;
+    margin-right: .5rem;
+}
+
+main.search .content-body ul.list-search li {
+    box-sizing: border-box;
+    border-bottom: 1px solid #CED4DB;
+    list-style: none;
+}
+
+main.search .content-body ul.list-search li:first-child {
+    border-top: 1px solid #CED4DB;
+}
+
+main.search .content-body ul.list-search li a:hover {
+    color: #45A845;
+}
+
+main.search .content-body ul.list-search li a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    'img title'
+    'img uploader';
+    text-decoration: none;
+    color: rgba(41, 41, 41, 1);
+    padding: 1rem;
+}
+
+main.search .content-body ul.list-search li a img {
+    grid-area: img;
+    width: 180px;
+    height: 120px;
+    margin-right: .8rem;
+}
+
+main.search .content-body ul.list-search li a p.title {
+    grid-area: title;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+main.search .content-body ul.list-search li a .uploader {
+    grid-area: uploader;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas: 
+    'img name'
+    'img date';
+    box-sizing: border-box;
+    align-content: flex-end;
+}
+
+main.search .content-body ul.list-search li a .uploader img {
+    grid-area: img;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+main.search .content-body ul.list-search li a .uploader p.name {
+    grid-area: name;
+    font-size: .8rem;
+    margin-bottom: -.2em;
+    color: rgba(41, 41, 41, 1);
+}
+
+main.search .content-body ul.list-search li a .uploader p.date {
+    grid-area: date;
+    font-size: .7rem;
+    color: #757575;
+    margin-bottom: -.2em;
+}
+/* END Search Layout */
 
 main .content-main {
     width: 100%;
@@ -561,10 +649,6 @@ footer {
     width: 100%;
     background-color: #E9ECEF;
     padding: 2rem 124px .7rem 124px;
-}
-
-footer.main {
-    
 }
 
 footer .logo span {
