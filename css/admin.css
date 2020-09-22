@@ -23,6 +23,15 @@ nav .custom-toggler {
     outline: 0;
 }
 
+nav ul li.nav-item .dropdown-menu .dropdown-item {
+    font-weight: 250;
+    letter-spacing: 1px;
+}
+
+nav ul li.nav-item .dropdown-menu .dropdown-item:hover {
+    color: #45A845 !important;
+}
+
 nav ul li.nav-item a.nav-link {
     color: black !important;
     font-weight: 250;
@@ -52,7 +61,7 @@ main .welcome {
     font-size: 1.8rem;
     line-height: 20px;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 main .list-card {
     display: flex;
@@ -64,13 +73,39 @@ main .list-card .item-card {
     border: 1px solid #CED4DB;
     width: 32%;
     border-radius: .3rem;
+    overflow: hidden;
+}
+
+main .item-card .header,
+main .item-card .body {
     padding: 1rem;
-    padding-bottom: unset;
 }
 
 main .list-card .item-card .header .title {
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+main .item-card .body p {
+    display: grid;
+    grid-template-columns: 4rem auto;
+}
+
+main .item-card a {
+    text-decoration: none;
+    text-align: center;
+}
+
+main .item-card a p {
+    background-color: #d8d8d8;
+    color: black;
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+main .item-card a p:hover {
+    background-color: #45A845;
+    color: white;
 }
 
 main textarea {
