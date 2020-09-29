@@ -6,3 +6,5 @@ for (var i = 0; i < btns.length; i++) {
         this.classList.add('active');
     });
 }
+
+if(document.querySelector('main.main')) document.body.style.backgroundColor = 'white';
